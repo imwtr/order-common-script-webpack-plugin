@@ -2,7 +2,8 @@
 A plugin for html-webpack-plugin, reorder common chunkFiles beyond `<script>` tags to make sure jQuery plugins work
 
 When using jQuery plugins in webpack and the jQuery itself is expose(`expose-loader`) by webpack, then we put it into the common chunks, now using `html-webpack-plugin` to compile this template file
-```  <script src="/public/static/libs/abc/jquery.abc.js"></script>
+``` html
+<script src="/public/static/libs/abc/jquery.abc.js"></script>
 
     <script src="http://localhost:8188/dist/js/common.js"></script>
     <script src="http://localhost:8188/dist/js/home.js"></script>
@@ -10,7 +11,8 @@ When using jQuery plugins in webpack and the jQuery itself is expose(`expose-loa
 </html>
 ```
 and we got
-```  <script src=/public/static/libs/abc/jquery.abc.js></script>
+```  html
+<script src=/public/static/libs/abc/jquery.abc.js></script>
     <script src=http://localhost:8188/dist/js/common.js></script>
     <script src=http://localhost:8188/dist/js/home.js></script>
     <script type="text/javascript" src="/public/static/dist/js/common.js?e0697ddd"></script>
@@ -35,12 +37,16 @@ Using npm
 
 # Usage
 Config your common chunks
-```
+```javascript
 //  webpack.config.js
 let HtmlOrderCommonScriptPlugin = require('order-common-script-webpack-plugin');
+
 // ...
+
 module.exports = {
+
     // ...
+    
     entry: {
         home: './src/js/home',
         detail: './src/js/detail',
