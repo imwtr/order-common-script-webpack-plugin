@@ -9,7 +9,7 @@ When using jQuery plugins in webpack and the jQuery itself is expose(`expose-loa
 </body>
 </html>
 ```
-and we got
+And we got
 ```  html
     <script src=/public/static/libs/abc/jquery.abc.js></script>
     <script src=http://localhost:8188/dist/js/common.js></script>
@@ -19,21 +19,23 @@ and we got
 </body>
 </html>
 ```
-the abc jQuery plugin won't works, we need to reorder the  `common.js` file before the `jquery.abc.js`
+The abc jQuery plugin won't works, we need to reorder the  `common.js` file before the `jquery.abc.js`
 
 
 
 # Arguments
-## `Options([Object={commonName: 'common'}])` 
-pass options to the plugin
+## `Options([Object = {commonName: 'common'}])` 
+Pass options to the plugin
 
 `commonName: String|Arrray(String)`
-config the common chunks, default is common, also works with mutiple chunks
+Config the common chunks, default is common, also works with mutiple chunks
 
 
 # Installation
 Using npm
-``npm install order-common-script-webpack-plugin --save-dev``
+```javascript
+npm install order-common-script-webpack-plugin --save-dev
+```
 
 
 # Usage
