@@ -1,0 +1,19 @@
+{
+  "name": "order-common-script-webpack-plugin",
+  "version": "1.0.0",
+  "description": "A plugin for html-webpack-plugin, reorder common chunkFiles beyond <script> tags to make sure jQuery plugins work",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "webpack",
+    "html-webpack-plugin",
+    "script",
+    "jQuery plugin",
+    "common",
+    "order"
+  ],
+  "author": "https://github.com/imwtr/",
+  "license": "ISC"
+}
