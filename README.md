@@ -1,4 +1,5 @@
-[![npm][npm]][npm-url]
+[![NPM](https://nodei.co/npm/order-common-script-webpack-plugin.png)](https://npmjs.org/package/order-common-script-webpack-plugin)
+
 # Description
 A plugin for html-webpack-plugin, reorder common chunkFiles beyond `<script>` tags to make sure jQuery plugins work
 
