@@ -1,3 +1,4 @@
+[![npm][npm]][npm-url]
 # Description
 A plugin for html-webpack-plugin, reorder common chunkFiles beyond `<script>` tags to make sure jQuery plugins work
 
