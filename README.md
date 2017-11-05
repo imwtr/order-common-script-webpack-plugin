@@ -11,7 +11,7 @@ When using jQuery plugins in webpack and the jQuery itself is expose(`expose-loa
 ```
 and we got
 ```  html
-<script src=/public/static/libs/abc/jquery.abc.js></script>
+    <script src=/public/static/libs/abc/jquery.abc.js></script>
     <script src=http://localhost:8188/dist/js/common.js></script>
     <script src=http://localhost:8188/dist/js/home.js></script>
     <script type="text/javascript" src="/public/static/dist/js/common.js?e0697ddd"></script>
@@ -24,14 +24,16 @@ the abc jQuery plugin won't works, we need to reorder the  `common.js` file befo
 
 
 # Arguments
-## `Options([Object={commonName: 'common'}])` pass options to the plugin
+## `Options([Object={commonName: 'common'}])` 
+pass options to the plugin
+
 `commonName: String|Arrray(String)`
 config the common chunks, default is common, also works with mutiple chunks
 
 
 # Installation
 Using npm
-`npm install order-common-script-webpack-plugin --save-dev`
+``npm install order-common-script-webpack-plugin --save-dev``
 
 
 # Usage
